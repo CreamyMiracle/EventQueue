@@ -1,0 +1,727 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "akavache/9.1.7": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_e_sqlite3": "2.1.4",
+          "akavache.sqlite3": "9.1.7"
+        },
+        "compile": {
+          "lib/net7.0/Akavache.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Akavache.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "akavache.core/9.1.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2",
+          "Newtonsoft.Json.Bson": "1.0.2",
+          "Splat": "14.6.8",
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Akavache.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Akavache.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "akavache.sqlite3/9.1.7": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.4",
+          "Splat": "14.6.8",
+          "System.Reactive": "5.0.0",
+          "akavache.core": "9.1.7"
+        },
+        "compile": {
+          "lib/net7.0/Akavache.Sqlite3.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Akavache.Sqlite3.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Splat/14.6.8": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Splat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Splat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_e_sqlite3/2.1.4": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.lib.e_sqlite3": "2.1.4",
+          "SQLitePCLRaw.provider.e_sqlite3": "2.1.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/2.1.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3/2.1.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net7.0/SQLitePCLRaw.lib.e_sqlite3.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/alpine-arm/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "alpine-arm"
+          },
+          "runtimes/alpine-arm64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "alpine-arm64"
+          },
+          "runtimes/alpine-x64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "alpine-x64"
+          },
+          "runtimes/browser-wasm/nativeassets/net7.0/e_sqlite3.a": {
+            "assetType": "native",
+            "rid": "browser-wasm"
+          },
+          "runtimes/linux-arm/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-armel/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-armel"
+          },
+          "runtimes/linux-mips64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-mips64"
+          },
+          "runtimes/linux-musl-arm/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm"
+          },
+          "runtimes/linux-musl-arm64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-musl-arm64"
+          },
+          "runtimes/linux-musl-x64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-ppc64le/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-ppc64le"
+          },
+          "runtimes/linux-s390x/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-s390x"
+          },
+          "runtimes/linux-x64/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x86/native/libe_sqlite3.so": {
+            "assetType": "native",
+            "rid": "linux-x86"
+          },
+          "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-arm64"
+          },
+          "runtimes/maccatalyst-x64/native/libe_sqlite3.dylib": {
+            "assetType": "native",
+            "rid": "maccatalyst-x64"
+          },
+          "runtimes/osx-arm64/native/libe_sqlite3.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libe_sqlite3.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-arm/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-arm"
+          },
+          "runtimes/win-arm64/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/e_sqlite3.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3/2.1.4": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.1.4"
+        },
+        "compile": {
+          "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net5.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "akavache/9.1.7": {
+      "sha512": "RJUfw36ACBJgqds2G7ghv43jp3WUKYO/RU71sl8ayN3JzzaT6xp1Xdkl72//5XMoWlUvMxuJDf9Q64lDobbnIw==",
+      "type": "package",
+      "path": "akavache/9.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "akavache.9.1.7.nupkg.sha512",
+        "akavache.nuspec",
+        "lib/monoandroid12.0/Akavache.dll",
+        "lib/monoandroid12.0/Akavache.xml",
+        "lib/monoandroid12.1/Akavache.dll",
+        "lib/monoandroid12.1/Akavache.xml",
+        "lib/monoandroid13.0/Akavache.dll",
+        "lib/monoandroid13.0/Akavache.xml",
+        "lib/net462/Akavache.dll",
+        "lib/net462/Akavache.xml",
+        "lib/net6.0-android31.0/Akavache.dll",
+        "lib/net6.0-android31.0/Akavache.xml",
+        "lib/net6.0-ios16.1/Akavache.dll",
+        "lib/net6.0-ios16.1/Akavache.xml",
+        "lib/net6.0-maccatalyst16.1/Akavache.dll",
+        "lib/net6.0-maccatalyst16.1/Akavache.xml",
+        "lib/net6.0-macos13.0/Akavache.dll",
+        "lib/net6.0-macos13.0/Akavache.xml",
+        "lib/net6.0-tvos16.1/Akavache.dll",
+        "lib/net6.0-tvos16.1/Akavache.xml",
+        "lib/net6.0/Akavache.dll",
+        "lib/net6.0/Akavache.xml",
+        "lib/net7.0-android33.0/Akavache.dll",
+        "lib/net7.0-android33.0/Akavache.xml",
+        "lib/net7.0-ios16.1/Akavache.dll",
+        "lib/net7.0-ios16.1/Akavache.xml",
+        "lib/net7.0-maccatalyst16.1/Akavache.dll",
+        "lib/net7.0-maccatalyst16.1/Akavache.xml",
+        "lib/net7.0-macos13.0/Akavache.dll",
+        "lib/net7.0-macos13.0/Akavache.xml",
+        "lib/net7.0-tvos16.1/Akavache.dll",
+        "lib/net7.0-tvos16.1/Akavache.xml",
+        "lib/net7.0/Akavache.dll",
+        "lib/net7.0/Akavache.xml",
+        "lib/netstandard2.0/Akavache.dll",
+        "lib/netstandard2.0/Akavache.xml",
+        "lib/netstandard2.1/Akavache.dll",
+        "lib/netstandard2.1/Akavache.xml",
+        "lib/tizen40/Akavache.dll",
+        "lib/tizen40/Akavache.xml",
+        "lib/xamarinios10/Akavache.dll",
+        "lib/xamarinios10/Akavache.xml",
+        "lib/xamarinmac20/Akavache.dll",
+        "lib/xamarinmac20/Akavache.xml",
+        "lib/xamarintvos10/Akavache.dll",
+        "lib/xamarintvos10/Akavache.xml"
+      ]
+    },
+    "akavache.core/9.1.7": {
+      "sha512": "Iv4fEP6YzE4bT9BfjaZRJjQR5P6Dj4E5zO5zdIwR31ZualdxinDAC8Q9kZO4TN6xh4rthqwfWvr6PRrE1PjBZA==",
+      "type": "package",
+      "path": "akavache.core/9.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "akavache.core.9.1.7.nupkg.sha512",
+        "akavache.core.nuspec",
+        "lib/monoandroid12.0/Akavache.Core.dll",
+        "lib/monoandroid12.0/Akavache.Core.xml",
+        "lib/monoandroid12.1/Akavache.Core.dll",
+        "lib/monoandroid12.1/Akavache.Core.xml",
+        "lib/monoandroid13.0/Akavache.Core.dll",
+        "lib/monoandroid13.0/Akavache.Core.xml",
+        "lib/net462/Akavache.Core.dll",
+        "lib/net462/Akavache.Core.xml",
+        "lib/net6.0-android31.0/Akavache.Core.dll",
+        "lib/net6.0-android31.0/Akavache.Core.xml",
+        "lib/net6.0-ios16.1/Akavache.Core.dll",
+        "lib/net6.0-ios16.1/Akavache.Core.xml",
+        "lib/net6.0-maccatalyst16.1/Akavache.Core.dll",
+        "lib/net6.0-maccatalyst16.1/Akavache.Core.xml",
+        "lib/net6.0-macos13.0/Akavache.Core.dll",
+        "lib/net6.0-macos13.0/Akavache.Core.xml",
+        "lib/net6.0-tvos16.1/Akavache.Core.dll",
+        "lib/net6.0-tvos16.1/Akavache.Core.xml",
+        "lib/net6.0-windows10.0.17763/Akavache.Core.dll",
+        "lib/net6.0-windows10.0.17763/Akavache.Core.xml",
+        "lib/net6.0/Akavache.Core.dll",
+        "lib/net6.0/Akavache.Core.xml",
+        "lib/net7.0-android33.0/Akavache.Core.dll",
+        "lib/net7.0-android33.0/Akavache.Core.xml",
+        "lib/net7.0-ios16.1/Akavache.Core.dll",
+        "lib/net7.0-ios16.1/Akavache.Core.xml",
+        "lib/net7.0-maccatalyst16.1/Akavache.Core.dll",
+        "lib/net7.0-maccatalyst16.1/Akavache.Core.xml",
+        "lib/net7.0-macos13.0/Akavache.Core.dll",
+        "lib/net7.0-macos13.0/Akavache.Core.xml",
+        "lib/net7.0-tvos16.1/Akavache.Core.dll",
+        "lib/net7.0-tvos16.1/Akavache.Core.xml",
+        "lib/net7.0-windows10.0.17763/Akavache.Core.dll",
+        "lib/net7.0-windows10.0.17763/Akavache.Core.xml",
+        "lib/net7.0/Akavache.Core.dll",
+        "lib/net7.0/Akavache.Core.xml",
+        "lib/netstandard2.0/Akavache.Core.dll",
+        "lib/netstandard2.0/Akavache.Core.xml",
+        "lib/netstandard2.1/Akavache.Core.dll",
+        "lib/netstandard2.1/Akavache.Core.xml",
+        "lib/tizen40/Akavache.Core.dll",
+        "lib/tizen40/Akavache.Core.xml",
+        "lib/xamarinios10/Akavache.Core.dll",
+        "lib/xamarinios10/Akavache.Core.xml",
+        "lib/xamarinmac20/Akavache.Core.dll",
+        "lib/xamarinmac20/Akavache.Core.xml",
+        "lib/xamarintvos10/Akavache.Core.dll",
+        "lib/xamarintvos10/Akavache.Core.xml"
+      ]
+    },
+    "akavache.sqlite3/9.1.7": {
+      "sha512": "1UMoyZbKe+jY4ALq/QYFmI2QiupkgLoKvVIJ2FZ2XtOuuNhXZeVzKSAh2ABn2R299tATjRglLLS6sJFPkTpZVw==",
+      "type": "package",
+      "path": "akavache.sqlite3/9.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "akavache.sqlite3.9.1.7.nupkg.sha512",
+        "akavache.sqlite3.nuspec",
+        "lib/monoandroid12.0/Akavache.Sqlite3.dll",
+        "lib/monoandroid12.0/Akavache.Sqlite3.xml",
+        "lib/monoandroid12.1/Akavache.Sqlite3.dll",
+        "lib/monoandroid12.1/Akavache.Sqlite3.xml",
+        "lib/monoandroid13.0/Akavache.Sqlite3.dll",
+        "lib/monoandroid13.0/Akavache.Sqlite3.xml",
+        "lib/net462/Akavache.Sqlite3.dll",
+        "lib/net462/Akavache.Sqlite3.xml",
+        "lib/net6.0-android31.0/Akavache.Sqlite3.dll",
+        "lib/net6.0-android31.0/Akavache.Sqlite3.xml",
+        "lib/net6.0-ios16.1/Akavache.Sqlite3.dll",
+        "lib/net6.0-ios16.1/Akavache.Sqlite3.xml",
+        "lib/net6.0-maccatalyst16.1/Akavache.Sqlite3.dll",
+        "lib/net6.0-maccatalyst16.1/Akavache.Sqlite3.xml",
+        "lib/net6.0-macos13.0/Akavache.Sqlite3.dll",
+        "lib/net6.0-macos13.0/Akavache.Sqlite3.xml",
+        "lib/net6.0-tvos16.1/Akavache.Sqlite3.dll",
+        "lib/net6.0-tvos16.1/Akavache.Sqlite3.xml",
+        "lib/net6.0/Akavache.Sqlite3.dll",
+        "lib/net6.0/Akavache.Sqlite3.xml",
+        "lib/net7.0-android33.0/Akavache.Sqlite3.dll",
+        "lib/net7.0-android33.0/Akavache.Sqlite3.xml",
+        "lib/net7.0-ios16.1/Akavache.Sqlite3.dll",
+        "lib/net7.0-ios16.1/Akavache.Sqlite3.xml",
+        "lib/net7.0-maccatalyst16.1/Akavache.Sqlite3.dll",
+        "lib/net7.0-maccatalyst16.1/Akavache.Sqlite3.xml",
+        "lib/net7.0-macos13.0/Akavache.Sqlite3.dll",
+        "lib/net7.0-macos13.0/Akavache.Sqlite3.xml",
+        "lib/net7.0-tvos16.1/Akavache.Sqlite3.dll",
+        "lib/net7.0-tvos16.1/Akavache.Sqlite3.xml",
+        "lib/net7.0/Akavache.Sqlite3.dll",
+        "lib/net7.0/Akavache.Sqlite3.xml",
+        "lib/netstandard2.0/Akavache.Sqlite3.dll",
+        "lib/netstandard2.0/Akavache.Sqlite3.xml",
+        "lib/netstandard2.1/Akavache.Sqlite3.dll",
+        "lib/netstandard2.1/Akavache.Sqlite3.xml",
+        "lib/tizen40/Akavache.Sqlite3.dll",
+        "lib/tizen40/Akavache.Sqlite3.xml",
+        "lib/xamarinios10/Akavache.Sqlite3.dll",
+        "lib/xamarinios10/Akavache.Sqlite3.xml",
+        "lib/xamarinmac20/Akavache.Sqlite3.dll",
+        "lib/xamarinmac20/Akavache.Sqlite3.xml",
+        "lib/xamarintvos10/Akavache.Sqlite3.dll",
+        "lib/xamarintvos10/Akavache.Sqlite3.xml"
+      ]
+    },
+    "Newtonsoft.Json/13.0.2": {
+      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "sha512": "QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "type": "package",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net45/Newtonsoft.Json.Bson.dll",
+        "lib/net45/Newtonsoft.Json.Bson.pdb",
+        "lib/net45/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
+        "newtonsoft.json.bson.1.0.2.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "Splat/14.6.8": {
+      "sha512": "WdhGXUvsWPNPzBLc/LC1Q5jLOczupHDc+4Skl0JaTEuyoDjxxe/Dme8UjGTkCPYbhnVWEsEJprWqyWDY5RNB9A==",
+      "type": "package",
+      "path": "splat/14.6.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "lib/net6.0/Splat.dll",
+        "lib/net6.0/Splat.xml",
+        "lib/net7.0/Splat.dll",
+        "lib/net7.0/Splat.xml",
+        "lib/netstandard2.0/Splat.dll",
+        "lib/netstandard2.0/Splat.xml",
+        "splat.14.6.8.nupkg.sha512",
+        "splat.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.bundle_e_sqlite3/2.1.4": {
+      "sha512": "EWI1olKDjFEBMJu0+3wuxwziIAdWDVMYLhuZ3Qs84rrz+DHwD00RzWPZCa+bLnHCf3oJwuFZIRsHT5p236QXww==",
+      "type": "package",
+      "path": "sqlitepclraw.bundle_e_sqlite3/2.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid90/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net461/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net6.0-android31.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net6.0-android31.0/SQLitePCLRaw.batteries_v2.xml",
+        "lib/net6.0-ios14.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net6.0-ios14.2/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net6.0-tvos10.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/xamarinios10/SQLitePCLRaw.batteries_v2.dll",
+        "sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
+        "sqlitepclraw.bundle_e_sqlite3.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.core/2.1.4": {
+      "sha512": "inBjvSHo9UDKneGNzfUfDjK08JzlcIhn1+SP5Y3m6cgXpCxXKCJDy6Mka7LpgSV+UZmKSnC8rTwB0SQ0xKu5pA==",
+      "type": "package",
+      "path": "sqlitepclraw.core/2.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SQLitePCLRaw.core.dll",
+        "sqlitepclraw.core.2.1.4.nupkg.sha512",
+        "sqlitepclraw.core.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.lib.e_sqlite3/2.1.4": {
+      "sha512": "2C9Q9eX7CPLveJA0rIhf9RXAvu+7nWZu1A2MdG6SD/NOu26TakGgL1nsbc0JAspGijFOo3HoN79xrx8a368fBg==",
+      "type": "package",
+      "path": "sqlitepclraw.lib.e_sqlite3/2.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "buildTransitive/net461/SQLitePCLRaw.lib.e_sqlite3.targets",
+        "buildTransitive/net6.0/SQLitePCLRaw.lib.e_sqlite3.targets",
+        "buildTransitive/net7.0/SQLitePCLRaw.lib.e_sqlite3.targets",
+        "lib/net461/_._",
+        "lib/netstandard2.0/_._",
+        "runtimes/alpine-arm/native/libe_sqlite3.so",
+        "runtimes/alpine-arm64/native/libe_sqlite3.so",
+        "runtimes/alpine-x64/native/libe_sqlite3.so",
+        "runtimes/browser-wasm/nativeassets/net6.0/e_sqlite3.a",
+        "runtimes/browser-wasm/nativeassets/net7.0/e_sqlite3.a",
+        "runtimes/linux-arm/native/libe_sqlite3.so",
+        "runtimes/linux-arm64/native/libe_sqlite3.so",
+        "runtimes/linux-armel/native/libe_sqlite3.so",
+        "runtimes/linux-mips64/native/libe_sqlite3.so",
+        "runtimes/linux-musl-arm/native/libe_sqlite3.so",
+        "runtimes/linux-musl-arm64/native/libe_sqlite3.so",
+        "runtimes/linux-musl-x64/native/libe_sqlite3.so",
+        "runtimes/linux-ppc64le/native/libe_sqlite3.so",
+        "runtimes/linux-s390x/native/libe_sqlite3.so",
+        "runtimes/linux-x64/native/libe_sqlite3.so",
+        "runtimes/linux-x86/native/libe_sqlite3.so",
+        "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib",
+        "runtimes/maccatalyst-x64/native/libe_sqlite3.dylib",
+        "runtimes/osx-arm64/native/libe_sqlite3.dylib",
+        "runtimes/osx-x64/native/libe_sqlite3.dylib",
+        "runtimes/win-arm/native/e_sqlite3.dll",
+        "runtimes/win-arm64/native/e_sqlite3.dll",
+        "runtimes/win-x64/native/e_sqlite3.dll",
+        "runtimes/win-x86/native/e_sqlite3.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/e_sqlite3.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/e_sqlite3.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/e_sqlite3.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/e_sqlite3.dll",
+        "sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
+        "sqlitepclraw.lib.e_sqlite3.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.provider.e_sqlite3/2.1.4": {
+      "sha512": "CSlb5dUp1FMIkez9Iv5EXzpeq7rHryVNqwJMWnpq87j9zWZexaEMdisDktMsnnrzKM6ahNrsTkjqNodTBPBxtQ==",
+      "type": "package",
+      "path": "sqlitepclraw.provider.e_sqlite3/2.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0-windows7.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "sqlitepclraw.provider.e_sqlite3.2.1.4.nupkg.sha512",
+        "sqlitepclraw.provider.e_sqlite3.nuspec"
+      ]
+    },
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "type": "package",
+      "path": "system.memory/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Reactive/5.0.0": {
+      "sha512": "erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "type": "package",
+      "path": "system.reactive/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net5.0/_._",
+        "build/netcoreapp3.1/System.Reactive.dll",
+        "build/netcoreapp3.1/System.Reactive.targets",
+        "build/netcoreapp3.1/System.Reactive.xml",
+        "buildTransitive/net5.0/_._",
+        "buildTransitive/netcoreapp3.1/System.Reactive.targets",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net5.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net5.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net5.0/System.Reactive.dll",
+        "lib/net5.0/System.Reactive.xml",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "system.reactive.5.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "akavache >= 9.1.7"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Rajala\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\Dev\\EventQueue\\EventQueue\\PersistentQueue\\PersistentQueue.csproj",
+      "projectName": "PersistentQueue",
+      "projectPath": "F:\\Dev\\EventQueue\\EventQueue\\PersistentQueue\\PersistentQueue.csproj",
+      "packagesPath": "C:\\Users\\Rajala\\.nuget\\packages\\",
+      "outputPath": "F:\\Dev\\EventQueue\\EventQueue\\PersistentQueue\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Rajala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "akavache": {
+            "target": "Package",
+            "version": "[9.1.7, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
