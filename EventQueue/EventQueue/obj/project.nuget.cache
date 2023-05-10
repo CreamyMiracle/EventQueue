@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "G3iUz2+wbPMa8bO927uLJ4UKO+YKeYmi0jeP98Pw6Y9Y1gTupZYclypkiIxWEHTRneNoPq2JiDu7tyZg52uqYw==",
+  "dgSpecHash": "VRrK6EzMRQ3Uwj/QlKhStf+pfwXq4yv+M/VXbWPvqkUWa5peB49h6gdVEgHIzqxmL2SuWFq96u+7waJto37Z1A==",
   "success": true,
-  "projectFilePath": "F:\\Dev\\EventQueue\\EventQueue\\EventQueue\\EventQueue.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Dev\\EventQueue\\EventQueue\\EventQueue\\EventQueue.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\akavache\\9.1.7\\akavache.9.1.7.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\akavache.core\\9.1.7\\akavache.core.9.1.7.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\akavache.sqlite3\\9.1.7\\akavache.sqlite3.9.1.7.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\splat\\14.6.8\\splat.14.6.8.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.4\\sqlitepclraw.provider.e_sqlite3.2.1.4.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\JuhanaR\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
