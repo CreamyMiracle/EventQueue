@@ -10,3 +10,15 @@ D:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\PersistentQueue.dl
 D:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\refint\PersistentQueue.dll
 D:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\PersistentQueue.pdb
 D:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\ref\PersistentQueue.dll
+F:\Dev\EventQueue\EventQueue\PersistentQueue\bin\Debug\net7.0\PersistentQueue.deps.json
+F:\Dev\EventQueue\EventQueue\PersistentQueue\bin\Debug\net7.0\PersistentQueue.dll
+F:\Dev\EventQueue\EventQueue\PersistentQueue\bin\Debug\net7.0\PersistentQueue.pdb
+F:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\PersistentQueue.csproj.AssemblyReference.cache
+F:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\PersistentQueue.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\PersistentQueue.AssemblyInfoInputs.cache
+F:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\PersistentQueue.AssemblyInfo.cs
+F:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\PersistentQueue.csproj.CoreCompileInputs.cache
+F:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\PersistentQueue.dll
+F:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\refint\PersistentQueue.dll
+F:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\PersistentQueue.pdb
+F:\Dev\EventQueue\EventQueue\PersistentQueue\obj\Debug\net7.0\ref\PersistentQueue.dll

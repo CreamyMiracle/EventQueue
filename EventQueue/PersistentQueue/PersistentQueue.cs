@@ -8,17 +8,10 @@ namespace PersistentQueue
     {
         public PersistentQueue(string name = "PersistentQueue")
         {
-            Akavache.Registrations.Start(name);
-            try
-            {
-                _frontKey = name + "_frontPointer";
-                _backKey = name + "_backPointer";
-                Front = BlobCache.LocalMachine.GetObject<int>(_frontKey).Wait();
-                Back = BlobCache.LocalMachine.GetObject<int>(_backKey).Wait();
-            }
-            catch (KeyNotFoundException)
-            {
-            }
+            Registrations.Start(name);
+
+            _frontKey = name + "_frontPointer";
+            _backKey = name + "_backPointer";
         }
 
         ~PersistentQueue()
@@ -48,14 +41,15 @@ namespace PersistentQueue
         #region Async Methods
         public async Task EnqueueAsync(T item, DateTimeOffset? expirationTime = null)
         {
-            bool advance = Back == null ? false : true;
-            if (!advance)
+            int? Back = await BlobCache.LocalMachine.GetOrCreateObject<int?>(_backKey, () => null);
+            if (Back == null)
             {
                 Back = 0;
+                await SetBack(0);
             }
             else
             {
-                await AdvanceBack();
+                await SetBack(++Back);
             }
             await BlobCache.LocalMachine.InsertObject(Back.ToString(), item, expirationTime);
             RaiseItemEnqueuedEvent();
@@ -63,14 +57,17 @@ namespace PersistentQueue
 
         public async Task<T> DequeueAsync()
         {
-            bool advance = Front == null ? false : true;
-            if (!advance)
+            int? Front = await BlobCache.LocalMachine.GetOrCreateObject<int?>(_frontKey, () => null);
+            int? Back = await BlobCache.LocalMachine.GetOrCreateObject<int?>(_backKey, () => null);
+
+            if (Front == null)
             {
                 Front = 0;
+                await SetFront(0);
             }
             else
             {
-                await AdvanceFront();
+                await SetFront(++Front);
             }
 
             try
@@ -90,7 +87,7 @@ namespace PersistentQueue
             {
                 if (Front == 0)
                 {
-                    Front = null;
+                    await BlobCache.LocalMachine.InvalidateObject<T>(_frontKey);
                 }
                 return default(T);
             }
@@ -100,6 +97,7 @@ namespace PersistentQueue
         {
             try
             {
+                int? Front = await BlobCache.LocalMachine.GetOrCreateObject<int?>(_frontKey, () => null);
                 return await BlobCache.LocalMachine.GetObject<T>(Front.ToString());
             }
             catch (KeyNotFoundException)
@@ -113,8 +111,6 @@ namespace PersistentQueue
             await BlobCache.LocalMachine.InvalidateAllObjects<T>();
             await BlobCache.LocalMachine.InvalidateObject<string>(_frontKey);
             await BlobCache.LocalMachine.InvalidateObject<string>(_backKey);
-            Front = null;
-            Back = null;
             RaiseQueueClearedEvent();
         }
         #endregion
@@ -170,22 +166,16 @@ namespace PersistentQueue
         #endregion
 
         #region Private Methods
-        private async Task AdvanceFront()
+        private async Task SetFront(int? value)
         {
             await BlobCache.LocalMachine.InvalidateObject<T>(_frontKey);
-            await BlobCache.LocalMachine.InsertObject(_frontKey, ++Front);
+            await BlobCache.LocalMachine.InsertObject(_frontKey, value);
         }
-
-        private async Task AdvanceBack()
+        private async Task SetBack(int? value)
         {
             await BlobCache.LocalMachine.InvalidateObject<T>(_backKey);
-            await BlobCache.LocalMachine.InsertObject(_backKey, ++Back);
+            await BlobCache.LocalMachine.InsertObject(_backKey, value);
         }
-        #endregion
-
-        #region Properties
-        public int? Front { get; private set; } = null;
-        public int? Back { get; private set; } = null;
         #endregion
 
         #region Private Fields
