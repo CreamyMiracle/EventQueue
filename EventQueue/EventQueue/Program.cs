@@ -6,33 +6,33 @@ namespace EventQueue
     {
         static async Task Main(string[] args)
         {
-            PersistentQueue<MyOwnQueueItem> stringQueue = new PersistentQueue<MyOwnQueueItem>("mau");
+            PersistentQueue<string> stringQueue = new PersistentQueue<string>("mau");
             stringQueue.QueueClearedEvent += StringQueue_QueueClearedEvent;
             stringQueue.ItemEnqueuedEvent += StringQueue_ItemEnqueuedEvent;
             stringQueue.ItemDequeuedEvent += StringQueue_ItemDequeuedEvent;
             stringQueue.Clear();
 
-            stringQueue.Enqueue(new MyOwnQueueItem() { Name = "1" });
-            stringQueue.Enqueue(new MyOwnQueueItem() { Name = "2" });
-            stringQueue.Enqueue(new MyOwnQueueItem() { Name = "3" });
-            stringQueue.Enqueue(new MyOwnQueueItem() { Name = "4" });
-            stringQueue.Enqueue(new MyOwnQueueItem() { Name = "5" });
+            stringQueue.Enqueue("1");
+            stringQueue.Enqueue("2");
+            stringQueue.Enqueue("3");
+            stringQueue.Enqueue("4");
+            stringQueue.Enqueue("5");
 
-            MyOwnQueueItem str1 = stringQueue.Dequeue();
+            string str1 = stringQueue.Dequeue();
 
-            PersistentQueue<MyOwnQueueItem2> stringQueue2 = new PersistentQueue<MyOwnQueueItem2>("mau2");
+            PersistentQueue<string> stringQueue2 = new PersistentQueue<string>("mau2");
             stringQueue2.Clear();
 
-            MyOwnQueueItem str2 = stringQueue.Dequeue();
+            string str2 = stringQueue.Dequeue();
             
-            stringQueue2.Enqueue(new MyOwnQueueItem2() { Name = "1" });
-            stringQueue2.Enqueue(new MyOwnQueueItem2() { Name = "2" });
-            stringQueue2.Enqueue(new MyOwnQueueItem2() { Name = "3" });
-            stringQueue2.Enqueue(new MyOwnQueueItem2() { Name = "4" });
-            stringQueue2.Enqueue(new MyOwnQueueItem2() { Name = "5" });
+            stringQueue2.Enqueue("1");
+            stringQueue2.Enqueue("2");
+            stringQueue2.Enqueue("3");
+            stringQueue2.Enqueue("4");
+            stringQueue2.Enqueue("5");
 
-            MyOwnQueueItem2 str3 = stringQueue2.Dequeue();
-            MyOwnQueueItem str4 = stringQueue.Dequeue();
+            string str3 = stringQueue2.Dequeue();
+            string str4 = stringQueue.Dequeue();
 
         }
 

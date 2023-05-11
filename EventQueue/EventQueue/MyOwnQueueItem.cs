@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace EventQueue
 {
-    internal class MyOwnQueueItem : QueueItem
+    internal class MyOwnQueueItem<T> : QueueItem<T>
     {
 
     }
 
-    internal class MyOwnQueueItem2 : QueueItem
+    internal class MyOwnQueueItem2<T> : QueueItem<T>
     {
 
     }
